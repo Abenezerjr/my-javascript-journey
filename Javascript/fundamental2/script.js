@@ -1,4 +1,7 @@
 "use strict";
+
+// const { name } = require("pug");
+
 /*
 let hasDriversLicense = false;
 const hasGoodVision = true;
@@ -141,7 +144,7 @@ function checkWinner1(avgDolhins, avgKoalas) {
     console.log("No team wins");
   }
 }
-*/
+
 //Arry
 
 const frindes = ["yise", "fker", "hayel", "chala"];
@@ -163,3 +166,180 @@ const calcAge = function (birthYeah) {
   return 2037 - birthYeah;
 };
 const years = [1990, 1967, 2002, 2010, 2008];
+
+// arrayMethode
+
+const frindes = ["yise", "fker", "hayel", "chala"];
+//push element add in the array
+frindes.push("bob");
+console.log(frindes);
+*/
+//JAVASCRIPT OF REACT//
+/*
+you have to konw 6 core thinges for javascrip in order to learn react
+1 arrow function
+2 terneay opraters
+3 array
+4 asyci wait
+5
+
+
+//arrow function
+export const Dosometing = () => {};
+//
+// Ananomasy function is a function defind with out name
+// you may find itsome timess like this
+<button onClick={() => {}}></button>;
+// working with tharnay with condional
+let age = 10;
+let name = age > 10 ? "abebe" : "Jack";
+// in react when  we went to returen some componate like some html tag
+// yhe we use tetnary opraters
+const someComeponant = () => {
+  return age > 10 ? <div>Pedro </div> : <div>jack</div>;
+};
+// Object
+const person = {
+  name: "abenezr",
+  age: 23,
+  Isreationshipe: false,
+};
+// destracureing peoperty of object
+const person2 = { ...person, name: "jack" };
+
+const names = ["abebe", "chala", "fantahun"];
+const names2 = [...name, "mertayehu"];
+
+const names = ["abebe", "chala", "fantahun", "abebe", "abebe"];
+// used .map() .fileter() funtion used
+
+names.map((name) => {
+  console.log(name);
+});
+
+// thhis uisng seacting and filetering
+names.filter((name) => {
+  return names != "abebe";
+});
+
+
+// ASYNC + Await + Fetch
+/* BASCI ARRAY OPERATION
+const names = ["abebe", "chala", "fantahun"];
+
+const newlLength = names.push("ab"); // add an element in the array
+console.log(newlLength);
+
+names.unshift("fantahun"); // add in element in the the bigginge of arry
+
+names.pop(); // delet Last last elemnt  in the arrye
+
+names.indexOf("chala"); // find the index of the arrye
+names.includes("fantahun"); // it rentun Boolean if the name is in the array
+
+// Object
+
+const myData = {
+  fname: "abebe",
+  lname: "chube",
+  age: "20",
+  jop: "teacher",
+  frindes: ["Michael", "chala", "mertayehu"],
+};
+
+console.log(myData);
+// How to retrive data in object element using .Dot vs Bracket Notation
+// Dot notation
+
+console.log(myData.lname);
+
+// barcket notaion
+console.log(myData["lname"]);
+
+const nameKay = "name";
+console.log(myData["f" + nameKay]);
+console.log(myData["l" + nameKay]);
+
+// Add in object
+myData.location = "AddisAbeba";
+console.log(myData);
+/// Prom
+// const interstedIn = prompt("what do you went know about abebe?");
+
+// if (myData[interstedIn]) {
+//   console.log(myData[interstedIn]);
+// } else {
+//   console.log("place enter approprate filed");
+// }
+//using dot
+console.log(
+  `${myData.fname} has ${myData.frindes.length} frindes and his best friend is called ${myData.frindes[0]}`
+);
+// using Bracket
+console.log(
+  `${myData["fname"]} has ${myData["frindes"].length} frindes and his best friend is called ${myData["frindes"][0]}`
+);
+
+/// Object methodes
+const myData = {
+  fname: "abebe",
+  lname: "chube",
+  birthYeah: 1991,
+  jop: "teacher",
+  frindes: ["Michael", "chala", "mertayehu"],
+  hasDriversLicense: true,
+  //   calcAge: function (birthYeah) {
+  //     return 2024 - birthYeah;
+  //   },
+  // };
+  // calcAge: function () {
+  //   // this. kayword pointes to the object callinge method
+  //   return 2024 - this.birthYeah;
+  // },
+  //////// This is the function calling of ///////
+  ///console.log(myData.calcAge())
+  calcAge: function () {
+    // this. kayword pointes to the object callinge method
+    this.age = 2024 - this.birthYeah;
+
+    return this.age;
+  },
+  /// the function callinge of this function is
+  // console.log(myData.age);
+  summer: function () {
+    return `${this.fname} is a ${this.calcAge()} years old ${this.jop}`;
+  },
+};
+// method one
+console.log(myData.summer());
+// when ever you call the function dont forget ()
+
+
+// loops or itreation
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
+
+// looping Arrays
+const myData = [
+  "abebe",
+  "chube",
+  "20",
+  "teacher",
+  ["Michael", "chala", "mertayehu"],
+];
+// looping 1 st start defining the varable
+
+for (let i = 0; i < myData.length; i++) {
+  console.log(myData[i]);
+}
+
+const years = [1990, 1967, 2002, 2010, 2008];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+*/
