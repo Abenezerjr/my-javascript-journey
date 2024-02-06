@@ -24,3 +24,13 @@ overlay.addEventListener("click", closeModal);
 //   overlay.classList.add("hidden");
 //   // modal.style.display = "block";
 // });
+// handling an ESC_KEYPRESS EVENT or Global event
+// 1 event listerner 1 clikc
+// 2 event listener 2 keydown
+// ! not contains
+// hwne ever you went to lisen a event listener on a keborad use parameter
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
