@@ -1,3 +1,5 @@
+const { hasUncaughtExceptionCaptureCallback } = require("process");
+
 const data = [
   {
     id: 1,
@@ -144,12 +146,13 @@ function getBook(id) {
 }
 
 //Destrcutering
-const book = getBook(1);
+const book = getBook(2);
 book;
 // const title = book.title;
 // const author = book.author;
 // in object if you went to Destrcutering you must use a kay(property)
-const { title, author, pages, genres } = book;
+const { title, author, pages, genres, publicationDate, hasMovieAdaptation } =
+  book;
 console.log(title, author, pages);
 console.log(genres);
 //array
@@ -196,3 +199,33 @@ pageNumber;
 
 const n = number > 190 ? `${number + 1}` : `${number - 1}`;
 console.log(n);
+
+// function declarationl
+// function getYear(str) {
+//   return str.split("-")[0];
+// }
+// console.log(getYear(publicationDate));
+
+// const massage = (str) => {
+//   return str.split("-")[0];}
+
+const massage = (str) => str.split("-")[0];
+
+const years1 = massage(publicationDate);
+years1;
+// and Operator && if the frist value is True it returen thes seconde value or stetement
+//exampl1
+console.log(true && "some string");
+console.log(false && "somestring");
+console.log(hasMovieAdaptation && "the book has a move");
+// or operator || if the frist is truw it return True
+console.log(true || "some string");
+
+console.log(book.translations.spanish);
+const spanishTranslatero = book.translations.spanish || "Note translated";
+spanishTranslatero;
+
+// ?? nocoalescing is an oprater wile returen only the seconde value when the frist value is null or undefind but not 0 or empty string
+
+const number1 = number.add ?? "nodata";
+number1;
