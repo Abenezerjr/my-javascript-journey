@@ -142,3 +142,57 @@ function getBooks() {
 function getBook(id) {
   return data.find((d) => d.id === id);
 }
+
+//Destrcutering
+const book = getBook(1);
+book;
+// const title = book.title;
+// const author = book.author;
+// in object if you went to Destrcutering you must use a kay(property)
+const { title, author, pages, genres } = book;
+console.log(title, author, pages);
+console.log(genres);
+//array
+const [x, y, g] = genres;
+console.log(x, y, g);
+/// RestdObject if we went unused arrye
+
+const [a, b, ...c] = genres;
+console.log(a, b);
+console.log(c);
+/// spreadarry
+const newGeneres = [...genres, "love"];
+newGeneres;
+//spreadObject
+const { translations } = book;
+translations;
+
+/*
+// const primaryGenere = genres[0];
+// const secondGenern = genres[1];
+//----------------------------------///
+//Rest arraye used if you went all arrye with out you definin it
+const [primaryGenere, secondGenern, ...otherFene] = genres;
+console.log(primaryGenere, secondGenern);
+console.log(otherFene);
+
+//spread Oprater if you went new arry in the exiting arrye but add a new one
+const newGeneres = [...genres, "epic fantasay"];
+console.log(newGeneres);
+////spread Oprater if you went new objct in the exiting arrye
+const updatedBook = {
+  ...book,
+  // addinge a new property
+  moviePublicationDate: "2020-12-19",
+  // Overwriting ab existing property
+  pages: 1211,
+};
+updatedBook;*/
+let number = 200;
+/// Ternariy
+/// how it work section if page > 100 then 'Over ahunderd' eles 'less than 1000
+const pageNumber = pages > 100 ? "Over a hunderd" : "less than 1000";
+pageNumber;
+
+const n = number > 190 ? `${number + 1}` : `${number - 1}`;
+console.log(n);
