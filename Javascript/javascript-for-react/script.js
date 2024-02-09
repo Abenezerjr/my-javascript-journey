@@ -146,7 +146,7 @@ function getBook(id) {
 }
 
 //Destrcutering
-const book = getBook(2);
+const book = getBook(3);
 book;
 // const title = book.title;
 // const author = book.author;
@@ -229,3 +229,15 @@ spanishTranslatero;
 
 const number1 = number.add ?? "nodata";
 number1;
+// optinal chaining -- okay ---?
+//The optional chaining (?.) operator accesses an object's property or calls a function.
+// If the object accessed or function called using this operator is undefined or null
+//the expression short circuits and evaluates to undefined instead of throwing an error.
+
+function getTotalReviwcount(book) {
+  const goodreads = book.reviews?.goodreads?.reviewsCount;
+  const librarything = book.reviews?.librarything?.reviewsCount ?? 0;
+  return goodreads + librarything;
+}
+
+console.log(getTotalReviwcount(book));
