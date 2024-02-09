@@ -144,7 +144,7 @@ function getBooks() {
 function getBook(id) {
   return data.find((d) => d.id === id);
 }
-
+/*
 //Destrcutering
 const book = getBook(3);
 book;
@@ -170,7 +170,7 @@ newGeneres;
 const { translations } = book;
 translations;
 
-/*
+
 // const primaryGenere = genres[0];
 // const secondGenern = genres[1];
 //----------------------------------///
@@ -191,6 +191,7 @@ const updatedBook = {
   pages: 1211,
 };
 updatedBook;*/
+/*
 let number = 200;
 /// Ternariy
 /// how it work section if page > 100 then 'Over ahunderd' eles 'less than 1000
@@ -241,3 +242,34 @@ function getTotalReviwcount(book) {
 }
 
 console.log(getTotalReviwcount(book));
+*/
+const books = getBooks();
+
+const x = [1, 2, 3, 4, 5].map((el) => el * 2);
+console.log(x);
+
+const title = books.map((book) => book.title);
+console.log(title);
+
+const essentialData = books.map((book) => {
+  ({
+    title: book.title,
+    author: book.author,
+  });
+});
+
+essentialData;
+// filter methode some condition array br=eased on condetion
+
+const longBooks = books
+  .filter((book) => book.pages > 500)
+  .filter((book) => book.hasMovieAdaptation);
+longBooks;
+
+const adventureBooks = books
+  .filter((book) => book.genres.includes("adventure"))
+  .map((book) => book.title);
+adventureBooks;
+
+const pagesAllBooks = books.reduce((acc, book) => acc + book.pages, 0);
+pagesAllBooks;
