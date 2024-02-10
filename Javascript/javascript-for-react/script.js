@@ -242,7 +242,7 @@ function getTotalReviwcount(book) {
 }
 
 console.log(getTotalReviwcount(book));
-*/
+
 const books = getBooks();
 
 const x = [1, 2, 3, 4, 5].map((el) => el * 2);
@@ -273,3 +273,69 @@ adventureBooks;
 
 const pagesAllBooks = books.reduce((acc, book) => acc + book.pages, 0);
 pagesAllBooks;
+// array sort
+// assanding
+const m = [3, 7, 1, 9, 6];
+const sorted = m.sort((a, b) => a - b);
+sorted;
+m;
+
+const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages);
+sortedByPages;
+// working with immutable what is immutable
+// oprations where we do not manipulate the underlying data structure
+
+//Add Book object in the arrye
+const newBook = {
+  id: 6,
+  title: " Harry Potter and the scerity of dumbldore",
+  author: "J.K.Rowling",
+};
+
+const booksAfterAdd = [...books, newBook];
+booksAfterAdd;
+// 2 Delete book object
+
+const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
+booksAfterDelete;
+const a1 = [2, 3, 4, 5, 7, 9];
+
+const DeleteOneItem = a1.filter((num) => num !== 9);
+DeleteOneItem;
+// update book in the array
+const bookAfterUpdate = booksAfterDelete.map((book) =>
+  book.id === 1
+    ? {
+        ...book,
+        pages: 12,
+      }
+    : book
+);
+bookAfterUpdate;
+// let age=20
+// const age1= age>=20 ? `wow`:`what you don't allowed here`
+// age1
+const listofAge = [20, 56, 78, 21, 34];
+
+const deleteage = listofAge.filter((age) => age !== 20);
+deleteage;
+
+const Addage = [89, ...listofAge];
+Addage;
+
+const updateage = listofAge.map((age) => (age == 78 ? (age = 12) : age));
+updateage;
+*/
+// Asynchronous javascript
+// fetch("https://jsonplaceholder.typicode.com/todos")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
+
+// Asynchronous AsyncAwait
+async function getTodos() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const data = await res.json();
+  console.log(data);
+}
+
+getTodos();
