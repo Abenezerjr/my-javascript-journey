@@ -1,5 +1,7 @@
 // // start javascript 6/13/2024
 
+const console = require("console");
+
 // console.log("hello javascript");
 
 // console.log(0 + 1);
@@ -59,3 +61,28 @@ const markHigherBMI = markBmi > johnBmi;
 console.log(markHigherBMI);
 
 // Template literals
+const fristName = "Abenezer";
+const job = "teacher";
+const age1 = 27;
+
+const fullname1 = `im ${fristName} a ${age1} years old ${job}`;
+console.log(fullname1);
+console.log("hi dude");
+
+console.log(`${5 + 5}`);
+
+// new line \n\
+console.log(`
+  multiple
+  line
+  add
+
+  `);
+
+/// Taking Decisions  if else Statements
+
+if (age >= 18) {
+  console.log("wow");
+} else {
+  console.log("wow");
+}
