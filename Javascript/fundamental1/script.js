@@ -86,3 +86,50 @@ if (age >= 18) {
 } else {
   console.log("wow");
 }
+
+console.log(typeof NaN);
+// NaN stand for not number
+console.log(NaN);
+
+const itCool = false;
+// boolne value also come as a result of comparisons
+if (itCool) {
+  console.log("hi man your a cool");
+} else {
+  console.log("oh your are not cool ..");
+}
+
+const ageofcat = 8;
+
+if (ageofcat < 8) {
+  console.log("she will be dead soon");
+} else {
+  console.log("she will live a couplu of years");
+}
+// objects
+
+const person = {
+  name: "jon",
+  age: 25,
+};
+
+console.log(person);
+
+//extract a specific value from the given object
+
+console.log(person.name);
+
+console.log(5 == "5");
+console.log(5 === "5");
+// strictly equal in javascript interpreter compares the values as well as their types and only returens ture when both are the same
+console.log(typeof "");
+console.log(typeof "0");
+
+console.log("" == "0");
+console.log(0 == "");
+console.log(false == "false");
+console.log(false == "0");
+console.log(null == undefined);
+console.log(undefined === null);
+
+/*  logical opretores  */
