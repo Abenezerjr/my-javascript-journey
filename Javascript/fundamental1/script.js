@@ -131,12 +131,13 @@ console.log(5 === "5");
 console.log(typeof "");
 console.log(typeof "0");
 
-console.log("" == "0");
+console.log("" === "0");
 console.log(0 == "");
 console.log(false == "false");
 console.log(false == "0");
 console.log(null == undefined);
 console.log(undefined === null);
+console.log(undefined === undefined);
 
 /*  logical opretores  */
 /* in javascript  ther are 3 types of logical oprater
@@ -159,3 +160,65 @@ if (birthYear >= 2000) {
 console.log(century);
 //// challenge \\
 //// Type Converision
+
+console.log("I am" + 23 + 2 + "years old");
+console.log("23" - "10" + 3);
+// 5 falsy value Nan 0 undefind ' ' null
+// any ting with out this value is true
+
+console.log(Boolean(0));
+console.log(Boolean({}));
+console.log(Boolean([]));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+console.log(Boolean(null));
+
+const money = 0;
+
+if (money) {
+  console.log("Dont spand it all");
+} else {
+  console.log("You shold get a job!");
+}
+// logical Boolena
+
+const shouldDrive = false;
+
+const averageScoreDolphins = (96 + 108 + 89) / 3;
+
+console.log(averageScoreDolphins);
+
+const averageScoreKoalas = (88 + 91 + 110) / 3;
+console.log(averageScoreKoalas);
+
+if (averageScoreDolphins > averageScoreKoalas && averageScoreDolphins >= 100) {
+  console.log("the winner of the competitions is Dolphins");
+} else if (
+  averageScoreDolphins < averageScoreKoalas &&
+  averageScoreKoalas >= 100
+) {
+  console.log("the winner of the commpetitions is Koalas");
+} else {
+  console.log("draw");
+}
+
+const day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("see football");
+    break;
+  case "tusday":
+    console.log("go church");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+
+if (day === "monday") {
+  console.log("see football");
+} else if (day === "tusday" || day == "wednesday") {
+  console.log("Write code with exmpla");
+} else {
+  console.log("Not a valid day!");
+}
