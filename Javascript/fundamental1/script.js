@@ -60,6 +60,12 @@ const markHigherBMI = markBmi > johnBmi;
 
 console.log(markHigherBMI);
 
+if (markBmi > johnBmi) {
+  console.log(`Mark BMI ${markBmi} is higher than John ${johnBmi}`);
+} else {
+  console.log(`Mark BMI ${johnBmi} is higher than John ${markBmi}`);
+}
+
 // Template literals
 const fristName = "Abenezer";
 const job = "teacher";
@@ -133,3 +139,23 @@ console.log(null == undefined);
 console.log(undefined === null);
 
 /*  logical opretores  */
+/* in javascript  ther are 3 types of logical oprater
+AND && this both conditon must true
+Or || atlest one true
+Not !
+
+*/
+
+const birthYear = 1998;
+let century; // used let and didit assign a value
+
+if (birthYear >= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+//conditionly assign
+console.log(century);
+//// challenge \\
+//// Type Converision
