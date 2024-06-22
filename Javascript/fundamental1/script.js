@@ -222,3 +222,92 @@ if (day === "monday") {
 } else {
   console.log("Not a valid day!");
 }
+
+/// Ternary opratore
+/*
+condition ? value_if_true : value_if_false
+
+*/
+const yourAge = 23;
+
+yourAge >= 23
+  ? console.log("i like to drink wine")
+  : console.log("i like to drink water");
+
+const drink = yourAge >= 23 ? "wine" : "Water";
+console.log(drink);
+
+console.log(`i like to drink
+  ${yourAge >= 23 ? "wine" : "Water"}`);
+
+//example
+
+const n = 20;
+
+const m = n >= 20 ? "i like to date" : "i wait you become 20";
+console.log(m);
+
+let n1;
+if (n >= 20) {
+  n1 = "i like to date";
+} else {
+  n1 = "i wait you become 20";
+}
+
+console.log(`${n >= 20 ? "i like to date" : "i wait you become 20"}`);
+/// c3
+
+const bill = 275;
+const tip1 = bill * 0.15;
+const tip2 = bill * 0.2;
+const calclTip =
+  bill >= 50 && bill <= 300
+    ? `the bill was ${bill}, the tip was ${tip1} and total value ${tip1 + bill}`
+    : `the bill was ${bill}, the tip was  ${tip2} and total value ${
+        tip2 + bill
+      }`;
+
+console.log(calclTip);
+
+// shorter way
+
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `the bill was ${bill}, the tip was ${tip} and total value ${tip1 + bill}`
+);
+
+//example 1
+//How would you write a ternary condition to check if a given number is even or odd?
+
+const number = 0;
+
+const evenOrodd = number % 2 === 0 ? "even" : "odd";
+
+console.log(evenOrodd);
+
+/*How can you use a ternary operator to determine if a
+ string's length is greater than 10 characters, and return "Long" if true and "Short" if false? */
+
+const stringLength = 10;
+const stringname = "abenezeralemayhu";
+console.log(stringname.length);
+
+const re = stringname.length >= stringLength ? "Long" : "Short";
+
+console.log(re);
+
+// example 2
+const score = 60;
+
+const result =
+  score >= 90
+    ? "good"
+    : score >= 80
+    ? "B"
+    : score >= 70
+    ? "c"
+    : score >= 60
+    ? "d"
+    : "Ng";
+
+console.log(result);
