@@ -92,3 +92,93 @@ const leftYears = (brithYear, name) => {
 const R = leftYears(2023, "Abbab");
 
 console.log(R);
+
+/// 3 tyeps of function in js
+
+//1 function declaration
+
+function addTwoNumber(a, b) {
+  return a + b;
+}
+
+const answre = addTwoNumber(9, 10);
+console.log(answre);
+
+//2 function declaretions
+
+const addTwoNumberwithD = function (a, b) {
+  return a + b;
+};
+
+const answre2 = addTwoNumber(100, 1);
+console.log(answre2);
+
+// Arrow function
+
+const addTwoNumberA = (a, b) => {
+  return a + b;
+};
+
+console.log(addTwoNumberA(100, 2));
+
+// caling function to another function
+function cutfruit(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessorF(apples, oranges) {
+  const applePieces = cutfruit(apples);
+  const orangesPieces = cutfruit(oranges);
+  console.log(apples, oranges);
+  const juice = `juice with ${applePieces}pieces of apples and ${orangesPieces} pieces of oranges.`;
+
+  return juice;
+}
+
+console.log(fruitProcessorF(2, 4));
+
+const calcAge3 = function (brithYear) {
+  const age = 2037 - brithYear;
+  const retirement = 65 - age;
+
+  return retirement;
+};
+
+const yearsUntilRetirementE = function (brithYear, name) {
+  const re2 = calcAge3(brithYear);
+
+  if (re2 > 0) {
+    // returen retiremnt
+    return `${name} retires in ${re2}`;
+  } else {
+    return `this man is already return`;
+  }
+};
+
+console.log(yearsUntilRetirementE(1991, "chala"));
+console.log(yearsUntilRetirementE(1971, "mana"));
+// function challenge
+
+const calcAverage = (score1, score2, score3) => {
+  const resulat = (score1 + score2 + score3) / 3;
+  return resulat;
+};
+
+const avgKoalas = calcAverage(85, 54, 41);
+const avgDolhins = calcAverage(23, 34, 27);
+
+console.log(avgDolhins);
+console.log(avgKoalas);
+
+const checkwinner = function (avgDolhins, avgKoalas) {
+  if (avgDolhins > avgKoalas && avgDolhins >= 2 * avgKoalas) {
+    console.log(`Dolhins win (${avgDolhins} vs ${avgKoalas})`);
+  } else if (avgKoalas > avgDolhins && avgKoalas >= 2 * avgDolhins) {
+    console.log(`Dolhins win (${avgDolhins} vs ${avgKoalas})`);
+  } else {
+    console.log("no tema wins");
+  }
+};
+
+checkwinner(avgDolhins, avgKoalas);
+/// Arrays in Js
