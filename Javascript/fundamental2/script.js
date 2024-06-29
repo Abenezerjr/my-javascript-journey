@@ -104,7 +104,7 @@ function addTwoNumber(a, b) {
 const answre = addTwoNumber(9, 10);
 console.log(answre);
 
-//2 function declaretions
+//2 function exprations
 
 const addTwoNumberwithD = function (a, b) {
   return a + b;
@@ -182,3 +182,66 @@ const checkwinner = function (avgDolhins, avgKoalas) {
 
 checkwinner(avgDolhins, avgKoalas);
 /// Arrays in Js
+
+const frindes = ["jon", "don", "peter"];
+
+const years = new Array(1992, 1986, 2008, 2020);
+
+console.log(frindes);
+console.log(years);
+console.log(frindes.length);
+console.log(frindes[frindes.length - 1]);
+
+const fristName = "ababe";
+const chala = [fristName, "chala", 2023 - 1990, frindes];
+
+console.log(chala);
+
+const calcAgeusingArry = function (brithYear) {
+  return 2037 - brithYear;
+};
+
+const years1 = [1990, 1967, 2002, 2010];
+// Array oprations(methods)
+
+years1.push(1899);
+
+console.log(years1);
+// used in oedre to chack  the element in array or not used strict equlity
+console.log(years1.includes("bob"));
+
+if (frindes.includes("petre")) {
+  console.log("you have afrinde name petre");
+} else {
+  console.log("he is not in your firnd list");
+}
+
+//challenge array
+// arrow functions with conditional stetement using if else
+// const calcTip = (bill) => {
+//   if (bill >= 50 && bill <= 300) {
+//     return bill * 0.15;
+//   } else {
+//     return bill * 0.2;
+//   }
+// };
+//arrow function
+
+const calcTip = (bill) =>
+  bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const billArray = [125, 555, 44];
+const tips = [
+  calcTip(billArray[0]),
+  calcTip(billArray[1]),
+  calcTip(billArray[billArray.length - 1]),
+];
+const total = [
+  billArray[0] + calcTip(billArray[0]),
+  billArray[1] + calcTip(billArray[1]),
+  billArray[billArray.length - 1] + calcTip(billArray[billArray.length - 1]),
+];
+
+console.log(billArray);
+console.log(tips);
+console.log(total);
