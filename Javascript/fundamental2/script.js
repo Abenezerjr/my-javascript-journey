@@ -245,3 +245,13 @@ const total = [
 console.log(billArray);
 console.log(tips);
 console.log(total);
+// Object
+// key value
+
+const objectOne = {
+  name: "Ababa",
+  faterName: "Jonas",
+  age: 2037 - 1991,
+  job: "farmer",
+  frindes: ["Michael", "chala", "Abera"],
+};
