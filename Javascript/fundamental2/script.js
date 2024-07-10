@@ -255,3 +255,15 @@ const objectOne = {
   job: "farmer",
   frindes: ["Michael", "chala", "Abera"],
 };
+
+const add0 = (a, b) => {
+  return a + b;
+};
+
+console.log(add0(4, 10));
+
+/// loop
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition  ${rep}`);
+}
