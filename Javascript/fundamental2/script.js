@@ -267,3 +267,9 @@ console.log(add0(4, 10));
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition  ${rep}`);
 }
+
+const arryesNames = ["A", "B", "C", "D"];
+
+function numberSquare(number) {
+  return number * number;
+}
