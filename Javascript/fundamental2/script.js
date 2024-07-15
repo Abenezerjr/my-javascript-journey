@@ -45,7 +45,7 @@ function clacAge1(brithYear) {
   const resulat = currentYear - brithYear;
   return resulat;
 }
-
+/*
 const H = clacAge1(2001);
 
 console.log(H);
@@ -143,7 +143,7 @@ const calcAge3 = function (brithYear) {
 
   return retirement;
 };
-
+/*
 const yearsUntilRetirementE = function (brithYear, name) {
   const re2 = calcAge3(brithYear);
 
@@ -262,14 +262,20 @@ const add0 = (a, b) => {
 
 console.log(add0(4, 10));
 
-/// loop
+/// for loop keep runing while the condition is true
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repetition  ${rep}`);
-}
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition  ${rep}`);
+// }
 
-const arryesNames = ["A", "B", "C", "D"];
+// const arryesNames = ["A", "B", "C", "D"];
 
-function numberSquare(number) {
-  return number * number;
+// function numberSquare(number) {
+//   return number * number;
+// }
+*/
+const years2 = [1990, 1967, 2002, 2010];
+
+for (let i = 0; i <= years2.length; i) {
+  console.log(i);
 }
