@@ -11,6 +11,7 @@
 // console.log(guess);
 let number = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
+let highScore = 0;
 console.log(number);
 //let score_number = (document.querySelector(".score").textContent = score);
 document.querySelector(".submit").addEventListener("click", function () {
@@ -31,6 +32,10 @@ document.querySelector(".submit").addEventListener("click", function () {
       document.querySelector(".score").textContent = score;
     } else {
       document.querySelector(".message").textContent = "You lose the game";
+    }
+    if (score > highScore) {
+      highScore = score;
+      document.querySelector(".highscore").textContent = highScore;
     }
   } else if (guess < number) {
     if (score > 1) {
