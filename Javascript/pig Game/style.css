@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #000;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-section {
-  display: flex;
+  position: relative;
 }
