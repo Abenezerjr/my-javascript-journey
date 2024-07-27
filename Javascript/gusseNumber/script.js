@@ -9,12 +9,21 @@
 //   Math.random() * 21 + 1
 // ));
 // console.log(guess);
+
+//for generating randome number
 let number = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
 let highScore = 0;
 console.log(number);
 //let score_number = (document.querySelector(".score").textContent = score);
 document.querySelector(".submit").addEventListener("click", function () {
+  /*
+  what is addeventListener ;- it is a javascript function that accept two parameter
+  in order to list event and execute some function based on that that event is excuet
+
+
+
+  */
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess);
   if (!guess) {
